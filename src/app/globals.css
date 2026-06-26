@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #E65100;
+    --color-primary-hover: #CC4400;
+    --color-primary-light: #FFF3E0;
+    --color-dark: #1E293B;
+    --color-dark-light: #334155;
+    --color-light: #FAFAF9;
+  }
+
+  html, body {
+    @apply w-full overflow-x-hidden bg-dark-bg text-dark font-figtree scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+}
