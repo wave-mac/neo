@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="pt-[140px] pb-20 relative overflow-hidden text-center bg-[radial-gradient(circle_at_top_right,rgba(230,81,0,0.05),transparent_60%)]">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="inline-block bg-primary-light text-primary font-poppins text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full mb-6 animate-fade-in">
-          Launching Soon
+          FOUNDING SPOT OFFER • LIMITED BATCH
         </div>
         <h1 className="font-museo text-4xl sm:text-5xl md:text-[56px] leading-[1.15] font-extrabold text-dark max-w-[800px] mx-auto mb-6 tracking-tight animate-fade-in-up">
           Every way you teach, <br />

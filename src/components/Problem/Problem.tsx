@@ -1,59 +1,66 @@
 'use client';
 
 export default function Problem() {
+  const pills = [
+    { icon: '📺', text: 'video platform' },
+    { icon: '🔔', text: 'event reminders' },
+    { icon: '💬', text: 'community app' },
+    { icon: '🗓️', text: 'booking tool' },
+    { icon: '💳', text: 'billing / Stripe' }
+  ];
+
+  const steps = [
+    { icon: '📺', text: 'A student watches lessons on one platform' },
+    { icon: '🔔', text: 'Receives event reminders somewhere else' },
+    { icon: '💬', text: 'Joins discussion in separate community app' },
+    { icon: '🗓️', text: 'Books coaching session through another tool' }
+  ];
+
   return (
     <section id="problem" className="bg-white py-[100px] border-t border-b border-slate-200">
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="text-center mb-14">
+      <div className="max-w-[1200px] mx-auto px-6 text-center">
+        {/* Section Header */}
+        <div className="mb-14">
+          <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-3">THE PROBLEM</span>
           <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-tight font-extrabold text-dark mb-5">
             Learning shouldn&apos;t feel fragmented.
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-dark-light max-w-[600px] mx-auto">
-            People learn better together. But most learning businesses are built across disconnected tools.
+          <p className="text-base sm:text-lg leading-relaxed text-dark-light max-w-[720px] mx-auto">
+            People learn better together. But most learning businesses are built across disconnected tools — and every extra login for students is another chance to disengage.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
-          <div className="flex flex-col gap-5">
-            <p className="text-base leading-relaxed text-dark-light">
-              <span className="font-semibold text-dark">A student watches lessons on one platform</span>, receives event reminders somewhere else, joins discussions in a separate community app, and books coaching sessions through another tool.
-            </p>
-            <p className="text-base leading-relaxed text-dark-light">
-              Every additional step creates friction. Every new login is another opportunity to disengage.
-            </p>
-            <p className="text-base leading-relaxed text-dark-light">
-              Over time, students stop participating, conversations lose momentum, and valuable learning moments disappear between platforms.
-            </p>
-            <p className="text-base leading-relaxed text-primary font-semibold">
-              Your learning ecosystem shouldn&apos;t be spread across five different tools. It should work as one connected experience.
-            </p>
-          </div>
+        {/* 5 Stacked Pills */}
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
+          {pills.map((pill, idx) => (
+            <div key={idx} className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-slate-600 shadow-sm">
+              <span>{pill.icon}</span>
+              <span>{pill.text}</span>
+            </div>
+          ))}
+        </div>
 
-          <div className="bg-dark-bg border border-slate-200 rounded-2xl p-4 sm:p-8 flex flex-col gap-3 sm:gap-4">
-            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">📺</div>
-              <div className="text-xs sm:text-sm font-medium text-dark">Watch Course Video</div>
-              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Teachable</div>
+        {/* Connector Line and Arrow */}
+        <div className="flex flex-col items-center mb-8">
+          <div className="w-[1px] h-8 bg-slate-300"></div>
+          <div className="w-2.5 h-2.5 rounded-full bg-primary -mt-1.5"></div>
+        </div>
+
+        {/* 2x2 Grid of Fragmented Experience */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto mb-10">
+          {steps.map((step, idx) => (
+            <div key={idx} className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm text-left hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
+              <span className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-lg shrink-0 shadow-sm">{step.icon}</span>
+              <span className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">{step.text}</span>
             </div>
-            <div className="text-center text-base sm:text-lg text-slate-400 leading-none">↓</div>
-            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">🔔</div>
-              <div className="text-xs sm:text-sm font-medium text-dark">Receive Event Alerts</div>
-              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Email / Zoom</div>
-            </div>
-            <div className="text-center text-base sm:text-lg text-slate-400 leading-none">↓</div>
-            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">💬</div>
-              <div className="text-xs sm:text-sm font-medium text-dark">Participate in Chat</div>
-              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Slack / Discord</div>
-            </div>
-            <div className="text-center text-base sm:text-lg text-slate-400 leading-none">↓</div>
-            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">🗓️</div>
-              <div className="text-xs sm:text-sm font-medium text-dark">Book 1-on-1 Coaching</div>
-              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Calendly</div>
-            </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Bottom Orange Alert Box */}
+        <div className="max-w-[700px] mx-auto bg-primary/5 border border-primary/20 rounded-2xl p-6 sm:p-8 shadow-sm">
+          <p className="text-sm sm:text-base leading-relaxed text-slate-700 font-medium">
+            Every additional step creates friction. Every new login is another opportunity to disengage. Over time, students stop participating, conversations lose momentum. <span className="text-primary font-bold">It should work as one connected experience.</span>
+          </p>
         </div>
       </div>
     </section>
