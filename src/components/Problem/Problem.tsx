@@ -22,10 +22,10 @@ export default function Problem() {
         {/* Section Header */}
         <div className="mb-14">
           <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-3">THE PROBLEM</span>
-          <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-tight font-extrabold text-dark mb-5">
+          <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-snug font-extrabold text-dark mb-5 tracking-wide">
             Learning shouldn&apos;t feel fragmented.
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-dark-light max-w-[720px] mx-auto">
+          <p className="text-base sm:text-lg leading-relaxed tracking-wide text-dark-light max-w-[720px] mx-auto">
             People learn better together. But most learning businesses are built across disconnected tools — and every extra login for students is another chance to disengage.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function Problem() {
         {/* 5 Stacked Pills */}
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
           {pills.map((pill, idx) => (
-            <div key={idx} className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-slate-600 shadow-sm">
+            <div key={idx} className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-slate-600 shadow-sm tracking-wide">
               <span>{pill.icon}</span>
               <span>{pill.text}</span>
             </div>
@@ -51,14 +51,14 @@ export default function Problem() {
           {steps.map((step, idx) => (
             <div key={idx} className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm text-left hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
               <span className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-lg shrink-0 shadow-sm">{step.icon}</span>
-              <span className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">{step.text}</span>
+              <span className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed tracking-wide">{step.text}</span>
             </div>
           ))}
         </div>
 
         {/* Bottom Orange Alert Box */}
         <div className="max-w-[700px] mx-auto bg-primary/5 border border-primary/20 rounded-2xl p-6 sm:p-8 shadow-sm">
-          <p className="text-sm sm:text-base leading-relaxed text-slate-700 font-medium">
+          <p className="text-sm sm:text-base leading-relaxed tracking-wide text-slate-700 font-medium">
             Every additional step creates friction. Every new login is another opportunity to disengage. Over time, students stop participating, conversations lose momentum. <span className="text-primary font-bold">It should work as one connected experience.</span>
           </p>
         </div>

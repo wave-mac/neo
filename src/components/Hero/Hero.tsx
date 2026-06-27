@@ -18,11 +18,11 @@ export default function Hero() {
         <div className="inline-block bg-primary-light text-primary font-poppins text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full mb-6 animate-fade-in">
           FOUNDING SPOT OFFER • LIMITED BATCH
         </div>
-        <h1 className="font-museo text-4xl sm:text-5xl md:text-[56px] leading-[1.15] font-extrabold text-dark max-w-[800px] mx-auto mb-6 tracking-tight animate-fade-in-up">
+        <h1 className="font-museo text-4xl sm:text-5xl md:text-[56px] leading-snug md:leading-[1.2] font-extrabold text-dark max-w-[800px] mx-auto mb-6 tracking-wide animate-fade-in-up">
           Every way you teach, <br />
           <span className="text-primary">better with a community.</span>
         </h1>
-        <p className="text-lg sm:text-xl leading-relaxed text-dark-light max-w-[680px] mx-auto mb-10 font-normal">
+        <p className="text-lg sm:text-xl leading-relaxed tracking-wide text-dark-light max-w-[700px] mx-auto mb-10 font-normal">
           Bring courses, cohorts, coaching, workshops, and events into one platform, 
           with community built into the experience from day one.
         </p>

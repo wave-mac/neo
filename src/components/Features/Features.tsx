@@ -54,11 +54,11 @@ export default function Features() {
       {/* Dark Header Banner */}
       <div className="bg-dark text-white text-center py-20 px-6">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-tight font-extrabold mb-5">
+          <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-snug tracking-wide font-extrabold mb-5">
             The complete online <br className="hidden sm:inline" />
             community platform <span className="text-primary italic">built for learning.</span>
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-slate-400 max-w-[640px] mx-auto">
+          <p className="text-base sm:text-lg leading-relaxed tracking-wide text-slate-400 max-w-[640px] mx-auto">
             Vectore empowers you with all the tools you need to build a thriving community around your education business.
           </p>
         </div>
@@ -73,10 +73,10 @@ export default function Features() {
                 <span className="self-start text-[10px] font-bold text-primary uppercase tracking-wider bg-primary-light px-2.5 py-1 rounded">
                   {feat.tag}
                 </span>
-                <h3 className="font-poppins text-lg sm:text-xl font-bold text-dark leading-snug">
+                <h3 className="font-poppins text-lg sm:text-xl font-bold text-dark leading-snug tracking-wide">
                   {feat.title}
                 </h3>
-                <p className="text-xs sm:text-sm leading-relaxed text-dark-light">
+                <p className="text-xs sm:text-sm leading-relaxed tracking-wide text-dark-light">
                   {feat.description}
                 </p>
               </div>
@@ -96,8 +96,8 @@ export default function Features() {
 
                 {/* Gray Skill Pills */}
                 <div className="flex flex-wrap gap-2">
-                  {feat.pills.map((pill, pIdx) => (
-                    <span key={pIdx} className="bg-slate-100 text-slate-500 rounded px-2.5 py-1 text-[11px] font-semibold">
+                  {feat.pills.map((pill, pIndex) => (
+                    <span key={pIndex} className="bg-slate-100 text-slate-500 rounded px-2.5 py-1 text-[11px] font-semibold tracking-wide">
                       {pill}
                     </span>
                   ))}
