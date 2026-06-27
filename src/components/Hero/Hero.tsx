@@ -50,7 +50,7 @@ export default function Hero() {
             <div className="w-6"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] lg:grid-cols-[220px_1fr] h-auto md:h-[calc(100%-40px)] bg-slate-50">
+          <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] lg:grid-cols-[220px_1fr] h-auto md:h-[calc(100%-40px)] bg-white">
             {/* Sidebar Navigation */}
             <div className="hidden md:flex flex-col gap-1 bg-white border-r border-slate-200 p-4 text-left">
               {sidebarTabs.map((tab, idx) => (
