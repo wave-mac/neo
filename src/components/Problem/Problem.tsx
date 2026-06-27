@@ -13,7 +13,7 @@ export default function Problem() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
           <div className="flex flex-col gap-5">
             <p className="text-base leading-relaxed text-dark-light">
               <span className="font-semibold text-dark">A student watches lessons on one platform</span>, receives event reminders somewhere else, joins discussions in a separate community app, and books coaching sessions through another tool.

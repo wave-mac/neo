@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="w-2.5 h-2.5 rounded-full bg-amber-500"></div>
             <div className="w-2.5 h-2.5 rounded-full bg-emerald-500"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] h-auto md:h-[calc(100%-40px)] bg-slate-50">
+          <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] lg:grid-cols-[240px_1fr] h-auto md:h-[calc(100%-40px)] bg-slate-50">
             <div className="hidden md:flex flex-col gap-4 bg-white border-r border-slate-200 p-6">
               <div className="h-3.5 rounded bg-primary/80 w-[80%]"></div>
               <div className="h-3.5 rounded bg-slate-200 w-[60%]"></div>
