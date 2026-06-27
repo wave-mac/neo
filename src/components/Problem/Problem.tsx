@@ -29,29 +29,29 @@ export default function Problem() {
             </p>
           </div>
 
-          <div className="bg-dark-bg border border-slate-200 rounded-2xl p-8 flex flex-col gap-4">
-            <div className="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center text-lg">📺</div>
-              <div className="text-sm font-medium text-dark">Watch Course Video</div>
-              <div className="text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2.5 py-1 rounded">Teachable</div>
+          <div className="bg-dark-bg border border-slate-200 rounded-2xl p-4 sm:p-8 flex flex-col gap-3 sm:gap-4">
+            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">📺</div>
+              <div className="text-xs sm:text-sm font-medium text-dark">Watch Course Video</div>
+              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Teachable</div>
             </div>
-            <div className="text-center text-lg text-slate-400 leading-none">↓</div>
-            <div className="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center text-lg">🔔</div>
-              <div className="text-sm font-medium text-dark">Receive Event Alerts</div>
-              <div className="text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2.5 py-1 rounded">Email / Zoom</div>
+            <div className="text-center text-base sm:text-lg text-slate-400 leading-none">↓</div>
+            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">🔔</div>
+              <div className="text-xs sm:text-sm font-medium text-dark">Receive Event Alerts</div>
+              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Email / Zoom</div>
             </div>
-            <div className="text-center text-lg text-slate-400 leading-none">↓</div>
-            <div className="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center text-lg">💬</div>
-              <div className="text-sm font-medium text-dark">Participate in Chat</div>
-              <div className="text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2.5 py-1 rounded">Slack / Discord</div>
+            <div className="text-center text-base sm:text-lg text-slate-400 leading-none">↓</div>
+            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">💬</div>
+              <div className="text-xs sm:text-sm font-medium text-dark">Participate in Chat</div>
+              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Slack / Discord</div>
             </div>
-            <div className="text-center text-lg text-slate-400 leading-none">↓</div>
-            <div className="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <div className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center text-lg">🗓️</div>
-              <div className="text-sm font-medium text-dark">Book 1-on-1 Coaching</div>
-              <div className="text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2.5 py-1 rounded">Calendly</div>
+            <div className="text-center text-base sm:text-lg text-slate-400 leading-none">↓</div>
+            <div className="flex flex-row items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 flex items-center justify-center text-base sm:text-lg shrink-0">🗓️</div>
+              <div className="text-xs sm:text-sm font-medium text-dark">Book 1-on-1 Coaching</div>
+              <div className="text-[10px] sm:text-xs font-bold text-slate-500 ml-auto bg-slate-100 px-2 sm:px-2.5 py-1 rounded shrink-0">Calendly</div>
             </div>
           </div>
         </div>

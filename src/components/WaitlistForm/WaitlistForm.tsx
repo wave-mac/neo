@@ -82,7 +82,7 @@ export default function WaitlistForm({
         onSubmit={handleSubscribe} 
         className={isVertical 
           ? "flex flex-col gap-4" 
-          : "flex flex-col sm:flex-row gap-3 p-2 bg-white border border-slate-200 rounded-xl shadow-md transition-all duration-300 focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10 focus-within:shadow-lg"
+          : "flex flex-col sm:flex-row gap-3 sm:p-2 sm:bg-white sm:border sm:border-slate-200 sm:rounded-xl sm:shadow-md bg-transparent border-none p-0 shadow-none transition-all duration-300 sm:focus-within:border-primary sm:focus-within:ring-4 sm:focus-within:ring-primary/10 sm:focus-within:shadow-lg"
         }
       >
         {/* Honeypot field for spam prevention */}
@@ -102,14 +102,14 @@ export default function WaitlistForm({
           onChange={(e) => setEmail(e.target.value)}
           className={isVertical 
             ? "border border-slate-200 rounded-md px-4 py-3.5 bg-dark-bg w-full focus:border-primary focus:bg-white outline-none text-base text-dark"
-            : "flex-1 px-4 py-3 border-none text-base text-dark bg-transparent outline-none min-w-0 placeholder-slate-400"
+            : "w-full sm:flex-1 px-4 py-3.5 sm:py-3 border border-slate-200 sm:border-none rounded-md sm:rounded-none bg-white sm:bg-transparent outline-none text-base text-dark placeholder-slate-400 focus:border-primary sm:focus:border-none"
           }
           required
         />
         <button 
           type="submit" 
           disabled={isSubmitting} 
-          className={`bg-primary hover:bg-primary-hover text-white font-poppins text-[15px] font-semibold px-6 py-3 rounded-md transition-all duration-300 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed ${isVertical ? 'w-full py-3.5 text-base' : ''}`}
+          className={`bg-primary hover:bg-primary-hover text-white font-poppins text-[15px] font-semibold px-6 py-3.5 sm:py-3 rounded-md transition-all duration-300 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed w-full sm:w-auto`}
         >
           {isSubmitting ? 'Securing spot...' : buttonText}
         </button>

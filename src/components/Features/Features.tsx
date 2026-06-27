@@ -54,7 +54,7 @@ export default function Features() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           {featuresList.map((feat, index) => (
-            <div key={index} className="bg-white border border-slate-200 rounded-2xl p-10 flex flex-col gap-4 shadow-sm hover:-translate-y-1 hover:shadow-premium hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
+            <div key={index} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 flex flex-col gap-4 shadow-sm hover:-translate-y-1 hover:shadow-premium hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
               <div className="self-start text-xs font-bold text-primary uppercase tracking-wider bg-primary-light px-2.5 py-1 rounded">
                 {feat.tag}
               </div>
