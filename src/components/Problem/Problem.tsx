@@ -57,9 +57,9 @@ export default function Problem() {
         </div>
 
         {/* Bottom Orange Alert Box */}
-        <div className="max-w-[700px] mx-auto bg-primary/5 border border-primary/20 rounded-2xl p-6 sm:p-8 shadow-sm">
-          <p className="text-sm sm:text-base leading-relaxed tracking-wide text-slate-700 font-medium">
-            Every additional step creates friction. Every new login is another opportunity to disengage. Over time, students stop participating, conversations lose momentum. <span className="text-primary font-bold">It should work as one connected experience.</span>
+        <div className="max-w-[700px] mx-auto bg-primary rounded-2xl p-6 sm:p-8 shadow-md text-white">
+          <p className="text-sm sm:text-base leading-relaxed tracking-wide font-medium">
+            Every additional step creates friction. Every new login is another opportunity to disengage. Over time, students stop participating, conversations lose momentum. <span className="font-bold underline decoration-2 underline-offset-4">It should work as one connected experience.</span>
           </p>
         </div>
       </div>

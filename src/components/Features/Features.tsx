@@ -68,9 +68,9 @@ export default function Features() {
       <div className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuresList.map((feat, idx) => (
-            <div key={idx} className="bg-[#fff] border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:-translate-y-1 hover:shadow-premium hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
-              <div className="flex flex-col gap-4">
-                <span className="self-start text-[10px] font-bold text-primary uppercase tracking-wider bg-primary-light px-2.5 py-1 rounded">
+            <div key={idx} className="bg-[#fff] border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-sm hover:-translate-y-1 hover:shadow-premium hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
+              <div className="flex flex-col items-center gap-4">
+                <span className="text-[10px] font-bold text-primary uppercase tracking-wider bg-primary-light px-2.5 py-1 rounded">
                   {feat.tag}
                 </span>
                 <h3 className="font-poppins text-lg sm:text-xl font-bold text-dark leading-snug tracking-wide">
@@ -81,10 +81,10 @@ export default function Features() {
                 </p>
               </div>
 
-              <div className="mt-6 flex flex-col gap-4">
+              <div className="mt-6 flex flex-col items-center gap-4 w-full">
                 {/* 0% Fee Mockup inside Card 6 */}
                 {feat.hasMockup && (
-                  <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between relative overflow-hidden">
+                  <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between w-full relative overflow-hidden text-left shadow-sm">
                     <div className="flex flex-col z-10">
                       <span className="text-xs font-bold text-emerald-800">Vectore Payouts</span>
                       <span className="text-[10px] text-emerald-600">Keep 100% of sales</span>
@@ -95,7 +95,7 @@ export default function Features() {
                 )}
 
                 {/* Gray Skill Pills */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap justify-center gap-2">
                   {feat.pills.map((pill, pIndex) => (
                     <span key={pIndex} className="bg-slate-100 text-slate-500 rounded px-2.5 py-1 text-[11px] font-semibold tracking-wide">
                       {pill}
