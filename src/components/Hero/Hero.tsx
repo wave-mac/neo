@@ -27,7 +27,7 @@ export default function Hero() {
           with community built into the experience from day one.
         </p>
 
-        <div className="max-w-[480px] mx-auto mb-4">
+        <div className="max-w-[560px] mx-auto mb-4">
           <WaitlistForm source="hero_cta" buttonText="Claim your founding spot" />
         </div>
         
