@@ -17,7 +17,7 @@ export default function Problem() {
   ];
 
   return (
-    <section id="problem" className="bg-white py-[100px] border-t border-b border-slate-200">
+    <section id="problem" className="bg-[#FAFAFA] py-[100px] border-t border-b border-slate-200">
       <div className="max-w-[1200px] mx-auto px-6 text-center">
         {/* Section Header */}
         <div className="mb-14">
