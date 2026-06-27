@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section className="pt-[140px] pb-20 relative overflow-hidden text-center bg-[radial-gradient(circle_at_top_right,rgba(230,81,0,0.05),transparent_60%)]">
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-[1200px] mx-auto px-[2px] sm:px-6">
         <div className="inline-block bg-primary-light text-primary font-poppins text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full mb-6 animate-fade-in">
           FOUNDING SPOT OFFER • LIMITED BATCH
         </div>
