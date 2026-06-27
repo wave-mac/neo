@@ -50,7 +50,7 @@ export default function Problem() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto mb-10">
           {steps.map((step, idx) => (
             <div key={idx} className="flex items-center gap-4 p-5 bg-[#fff] border border-slate-200 rounded-2xl shadow-sm text-left hover:-translate-y-[2px] hover:shadow-md transition-all duration-300">
-              <span className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-lg shrink-0 shadow-sm">{step.icon}</span>
+              <span className="w-10 h-10 rounded-xl bg-[#fff] border border-slate-200 flex items-center justify-center text-lg shrink-0 shadow-sm">{step.icon}</span>
               <span className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed tracking-wide">{step.text}</span>
             </div>
           ))}
