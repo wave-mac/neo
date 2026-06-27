@@ -30,10 +30,9 @@ export default function Problem() {
           </p>
         </div>
 
-        {/* 5 Stacked Pills */}
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
           {pills.map((pill, idx) => (
-            <div key={idx} className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-slate-600 shadow-sm tracking-wide">
+            <div key={idx} className="flex items-center gap-2 bg-primary border border-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-white shadow-sm tracking-wide">
               <span>{pill.icon}</span>
               <span>{pill.text}</span>
             </div>
