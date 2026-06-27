@@ -53,7 +53,7 @@ export default function Features() {
     <section id="features" className="bg-[#FAFAFA]">
       {/* Dark Header Banner */}
       <div className="bg-dark text-white text-center py-20 px-6">
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-snug tracking-wide font-extrabold mb-5">
             The complete online <br className="hidden sm:inline" />
             community platform <span className="text-primary italic">built for learning.</span>
@@ -65,7 +65,7 @@ export default function Features() {
       </div>
 
       {/* 3x2 Grid of Cards */}
-      <div className="max-w-[1200px] mx-auto px-[2px] sm:px-6 py-20">
+      <div className="max-w-7xl mx-auto px-[2px] sm:px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuresList.map((feat, idx) => (
             <div key={idx} className="bg-[#fff] border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-sm hover:-translate-y-1 hover:shadow-premium hover:border-primary/20 transition-all duration-300 relative overflow-hidden">

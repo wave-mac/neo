@@ -5,7 +5,7 @@ import WaitlistForm from '../WaitlistForm/WaitlistForm';
 export default function BottomSignup() {
   return (
     <section id="bottom-signup" className="py-[100px] bg-white border-t border-slate-200">
-      <div className="max-w-[1200px] mx-auto px-[2px] sm:px-6">
+      <div className="max-w-7xl mx-auto px-[2px] sm:px-6">
         <div className="bg-dark rounded-2xl p-6 sm:p-10 md:p-16 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-16 items-center relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:bg-[radial-gradient(circle,rgba(230,81,0,0.15)_0%,transparent_70%)] before:z-10">
           <div className="text-white z-20 relative">
             <h2 className="font-museo text-white text-3xl sm:text-4xl md:text-[38px] leading-snug tracking-wide font-extrabold mb-4">
