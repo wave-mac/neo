@@ -5,7 +5,7 @@ interface FeatureCard {
   title: string;
   description: string;
   pills: string[];
-  mockupType?: 'programs' | 'events' | 'automations' | 'analytics' | 'payout';
+  mockupType?: 'programs' | 'chats' | 'events' | 'automations' | 'analytics' | 'payout';
 }
 
 const featuresList: FeatureCard[] = [
@@ -20,7 +20,8 @@ const featuresList: FeatureCard[] = [
     tag: 'Discussions & Chats',
     title: 'Create a community people actually participate in',
     description: 'Keep members engaged with discussion posts, chats, challenges, gamification, and member matching — letting your members connect, contribute, and learn from one another in the same spot.',
-    pills: ['Discussions', 'Direct Messages', 'Group Chats', 'Member Profiles']
+    pills: ['Discussions', 'Direct Messages', 'Group Chats', 'Member Profiles'],
+    mockupType: 'chats'
   },
   {
     tag: 'Events & Coaching',
@@ -124,8 +125,60 @@ export default function Features() {
                           <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
                         </div>
                         <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Group Session</span>
-                        <span className="text-[9px] text-slate-500 line-clamp-2">Shared seat sessions.</span>
                       </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Discussions & Chats Mockup (Image 3) */}
+                {feat.mockupType === 'chats' && (
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex flex-col gap-2.5">
+                    <div className="flex justify-between items-center pb-2 border-b border-slate-200/60">
+                      <span className="font-bold text-slate-800 text-xs flex items-center gap-1">
+                        <span className="text-slate-400 font-normal">#</span> general
+                      </span>
+                      <span className="text-[10px] text-slate-400 font-medium">142 online</span>
+                    </div>
+                    
+                    <div className="flex flex-col gap-2.5 py-1">
+                      <div className="flex items-start gap-2 text-[11px]">
+                        <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0 mt-0.5"></div>
+                        <div className="flex flex-col">
+                          <div className="flex items-baseline gap-1.5">
+                            <span className="font-bold text-slate-800">Jordan</span>
+                            <span className="text-[9px] text-slate-400">2:14 PM</span>
+                          </div>
+                          <p className="text-slate-600 leading-tight mt-0.5">
+                            Just shipped my capstone project 🎉 feedback welcome!
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-2 text-[11px]">
+                        <div className="w-6 h-6 rounded-full bg-orange-400 flex-shrink-0 mt-0.5"></div>
+                        <div className="flex flex-col">
+                          <div className="flex items-baseline gap-1.5">
+                            <span className="font-bold text-slate-800">Priya</span>
+                            <span className="text-[9px] text-slate-400">2:16 PM</span>
+                          </div>
+                          <p className="text-slate-600 leading-tight mt-0.5">
+                            Congrats!! 🔥 this is exactly what the challenge was made for
+                          </p>
+                          <div className="flex gap-1.5 mt-1.5">
+                            <span className="bg-orange-50 border border-orange-200 text-[10px] px-2 py-0.5 rounded-full flex items-center gap-1 font-semibold text-primary">
+                              🎉 24
+                            </span>
+                            <span className="bg-white border border-slate-200 text-[10px] px-2 py-0.5 rounded-full flex items-center gap-1 font-medium text-slate-600">
+                              🔥 18
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white border border-slate-200 rounded-xl p-1.5 flex items-center justify-between pl-3 shadow-2xs mt-1">
+                      <span className="text-[10px] text-slate-400 truncate">Share something with the community...</span>
+                      <div className="bg-primary text-white rounded-lg px-2 py-1 text-[10px] font-bold">↑</div>
                     </div>
                   </div>
                 )}
