@@ -21,7 +21,6 @@ export default function Problem() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
         {/* Section Header */}
         <div className="mb-14">
-          <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-3">THE PROBLEM</span>
           <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-snug font-extrabold text-dark mb-5 tracking-wide">
             Learning shouldn&apos;t feel fragmented.
           </h2>

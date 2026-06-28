@@ -35,9 +35,8 @@ export default function Hero() {
           Founding members get lifetime lowest pricing and early access when we launch.
         </p>
 
-        {/* Dashboard Mockup Component */}
+        {/* Dashboard Mockup Component - Commented Out
         <div className="mt-16 mx-auto max-w-[900px] rounded-2xl border border-slate-200 shadow-premium bg-white overflow-hidden relative aspect-auto md:aspect-video animate-float">
-          {/* Browser Topbar */}
           <div className="h-10 bg-slate-100 border-b border-slate-200 flex items-center px-4 gap-1.5 justify-between">
             <div className="flex gap-1.5">
               <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
@@ -51,7 +50,6 @@ export default function Hero() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] lg:grid-cols-[220px_1fr] h-auto md:h-[calc(100%-40px)] bg-[#fff]">
-            {/* Sidebar Navigation */}
             <div className="hidden md:flex flex-col gap-1 bg-white border-r border-slate-200 p-4 text-left">
               {sidebarTabs.map((tab, idx) => (
                 <div 
@@ -68,17 +66,13 @@ export default function Hero() {
               ))}
             </div>
 
-            {/* Dashboard Workspace */}
             <div className="p-4 sm:p-8 flex flex-col gap-4 sm:gap-6 text-left">
-              {/* Welcome Banner */}
               <div className="h-20 sm:h-[120px] rounded-xl bg-gradient-to-r from-primary to-orange-400 flex items-center justify-center font-museo text-3xl sm:text-4xl md:text-5xl text-white font-extralight tracking-wide border border-primary/30 relative overflow-hidden shadow-sm">
                 <span className="z-10 italic">welcome...</span>
                 <div className="absolute right-0 top-0 bottom-0 bg-white/10 w-24 rotate-12 -translate-y-2 translate-x-4"></div>
               </div>
 
-              {/* Stats Cards Row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                {/* Members Card */}
                 <div className="bg-white border border-slate-200 rounded-xl p-5 flex flex-col gap-2.5 shadow-sm hover:shadow transition-all relative overflow-hidden">
                   <div className="flex justify-between items-center">
                     <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Members</span>
@@ -90,7 +84,6 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Revenue Card */}
                 <div className="bg-white border border-slate-200 rounded-xl p-5 flex flex-col gap-2.5 shadow-sm hover:shadow transition-all relative overflow-hidden">
                   <div className="flex justify-between items-center">
                     <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Revenue</span>
@@ -105,6 +98,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        */}
 
       </div>
     </section>
