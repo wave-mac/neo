@@ -5,7 +5,7 @@ interface FeatureCard {
   title: string;
   description: string;
   pills: string[];
-  hasMockup?: boolean;
+  mockupType?: 'analytics' | 'payout';
 }
 
 const featuresList: FeatureCard[] = [
@@ -37,14 +37,15 @@ const featuresList: FeatureCard[] = [
     tag: 'Analytics',
     title: 'Make decisions with real visibility',
     description: 'Track participation, program performance, member activity, and revenue from a single dashboard. Get the insights you need to improve your programs and community.',
-    pills: ['Active Members', 'Engagement', 'Revenue']
+    pills: ['Active Members', 'Engagement', 'Revenue'],
+    mockupType: 'analytics'
   },
   {
     tag: 'Keep 100% of revenue',
     title: 'Keep more of your revenue',
     description: 'Zero transaction fees on your product sales. Keep 100% of your earnings. No hidden charges or platform cuts.',
     pills: ['0% Fees', 'Stripe', 'Payouts'],
-    hasMockup: true
+    mockupType: 'payout'
   }
 ];
 
@@ -52,7 +53,7 @@ export default function Features() {
   return (
     <section id="features" className="bg-[#FAFAFA]">
       {/* Dark Header Banner */}
-      <div className="bg-dark text-white text-center py-20 px-6">
+      <div className="bg-dark text-white text-center py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-snug tracking-wide font-extrabold mb-5">
             The complete online <br className="hidden sm:inline" />
@@ -65,7 +66,7 @@ export default function Features() {
       </div>
 
       {/* 3x2 Grid of Cards */}
-      <div className="max-w-7xl mx-auto px-[2px] sm:px-6 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuresList.map((feat, idx) => (
             <div key={idx} className="bg-[#fff] border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-sm hover:-translate-y-1 hover:shadow-premium hover:border-primary/20 transition-all duration-300 relative overflow-hidden">
@@ -82,22 +83,74 @@ export default function Features() {
               </div>
 
               <div className="mt-6 flex flex-col items-center gap-4 w-full">
-                {/* 0% Fee Mockup inside Card 6 */}
-                {feat.hasMockup && (
-                  <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between w-full relative overflow-hidden text-left shadow-sm">
-                    <div className="flex flex-col z-10">
-                      <span className="text-xs font-bold text-emerald-800">Vectore Payouts</span>
-                      <span className="text-[10px] text-emerald-600">Keep 100% of sales</span>
+                {/* Analytics Mockup */}
+                {feat.mockupType === 'analytics' && (
+                  <div className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all my-2">
+                    <div className="grid grid-cols-3 gap-2 mb-3">
+                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
+                        <span className="text-slate-500 font-medium text-[10px]">Participation</span>
+                        <div className="font-poppins font-bold text-xs sm:text-sm text-slate-800 my-0.5">74%</div>
+                        <div className="text-[9px] font-bold text-primary">▲ 9.2%</div>
+                      </div>
+                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
+                        <span className="text-slate-500 font-medium text-[10px]">Active</span>
+                        <div className="font-poppins font-bold text-xs sm:text-sm text-slate-800 my-0.5">2,418</div>
+                        <div className="text-[9px] font-bold text-primary">▲ 12%</div>
+                      </div>
+                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
+                        <span className="text-slate-500 font-medium text-[10px]">Revenue</span>
+                        <div className="font-poppins font-bold text-xs sm:text-sm text-slate-800 my-0.5">$31.6k</div>
+                        <div className="text-[9px] font-bold text-primary">▲ 8.9%</div>
+                      </div>
                     </div>
-                    <span className="font-poppins font-black text-emerald-700 text-xl z-10">0% fee</span>
-                    <div className="absolute right-0 top-0 bottom-0 bg-emerald-100/30 w-16 rotate-12 -translate-y-2 translate-x-4"></div>
+                    <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2.5">
+                      <div className="text-slate-600 font-bold text-[10px] sm:text-[11px] mb-2">Engagement · last 7 days</div>
+                      <div className="flex items-end justify-between gap-1.5 h-16 pt-1">
+                        <div className="w-full bg-[#FDBA74] rounded-t-sm h-[35%]"></div>
+                        <div className="w-full bg-[#FDBA74] rounded-t-sm h-[55%]"></div>
+                        <div className="w-full bg-[#FDBA74] rounded-t-sm h-[42%]"></div>
+                        <div className="w-full bg-[#FDBA74] rounded-t-sm h-[70%]"></div>
+                        <div className="w-full bg-[#FDBA74] rounded-t-sm h-[60%]"></div>
+                        <div className="w-full bg-primary rounded-t-sm h-[92%] shadow-sm"></div>
+                        <div className="w-full bg-[#FDBA74] rounded-t-sm h-[65%]"></div>
+                      </div>
+                    </div>
                   </div>
                 )}
 
-                {/* Gray Skill Pills */}
+                {/* 0% Fee & Payout Mockup */}
+                {feat.mockupType === 'payout' && (
+                  <div className="bg-white border border-orange-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all relative overflow-hidden my-2">
+                    <div className="flex items-baseline mb-3">
+                      <span className="font-poppins font-black text-3xl sm:text-4xl text-primary leading-none">0%</span>
+                      <span className="text-slate-600 font-medium text-xs sm:text-sm ml-2">transaction fees</span>
+                    </div>
+
+                    <div className="bg-[#FFF9F5] border border-orange-200/60 rounded-xl p-3 sm:p-3.5 w-full">
+                      <div className="text-slate-500 font-semibold text-[11px] mb-2">This month&apos;s payout</div>
+                      
+                      <div className="flex justify-between items-center text-xs border-b border-orange-200/50 pb-1.5 mb-1.5">
+                        <span className="text-slate-600 font-medium">Gross sales</span>
+                        <span className="font-poppins font-bold text-slate-800">$8,420</span>
+                      </div>
+
+                      <div className="flex justify-between items-center text-xs border-b border-orange-200/50 pb-1.5 mb-2">
+                        <span className="text-slate-600 font-medium">Platform fees</span>
+                        <span className="font-poppins font-bold text-primary">-$0.00</span>
+                      </div>
+
+                      <div className="flex justify-between items-center text-xs sm:text-sm pt-0.5">
+                        <span className="font-bold text-slate-900">You keep</span>
+                        <span className="font-poppins font-black text-primary text-base sm:text-lg">$8,420</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Orange Text Skill Pills */}
                 <div className="flex flex-wrap justify-center gap-2">
                   {feat.pills.map((pill, pIndex) => (
-                    <span key={pIndex} className="bg-slate-100 text-slate-500 rounded px-2.5 py-1 text-[11px] font-semibold tracking-wide">
+                    <span key={pIndex} className="bg-primary-light text-primary rounded px-2.5 py-1 text-[11px] font-semibold tracking-wide">
                       {pill}
                     </span>
                   ))}

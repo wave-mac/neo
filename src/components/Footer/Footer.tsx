@@ -1,12 +1,14 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer className="py-10 bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-[2px] sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-0">
           <div className="flex items-center">
-            <img src="/logo-light.png" alt="Vectore" className="h-6 w-auto" />
+            <Image src="/logo-light.png" alt="Vectore" width={96} height={24} className="h-6 w-auto" />
           </div>
           <p className="text-xs sm:text-sm text-white/80">
             © {new Date().getFullYear()} Vectore. All rights reserved.

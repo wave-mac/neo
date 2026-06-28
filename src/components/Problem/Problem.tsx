@@ -18,7 +18,7 @@ export default function Problem() {
 
   return (
     <section id="problem" className="bg-[#FAFAFA] py-[100px] border-t border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-[2px] sm:px-6 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
         {/* Section Header */}
         <div className="mb-14">
           <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-3">THE PROBLEM</span>
