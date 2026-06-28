@@ -86,10 +86,10 @@ export default function Features() {
                 </p>
               </div>
 
-              <div className="mt-6 flex flex-col items-center gap-4 w-full">
+              <div className="mt-6 flex flex-col items-center justify-between gap-4 w-full flex-1">
                 {/* Create a Program Mockup (Image 5) */}
                 {feat.mockupType === 'programs' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2">
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-center">
                     <div className="flex justify-between items-center mb-2.5">
                       <span className="font-bold text-slate-800 text-xs">Create a program</span>
                       <span className="text-slate-400 text-xs">✕</span>
@@ -132,7 +132,7 @@ export default function Features() {
 
                 {/* Discussions & Chats Mockup (Image 3) */}
                 {feat.mockupType === 'chats' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex flex-col gap-2.5">
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-between">
                     <div className="flex justify-between items-center pb-2 border-b border-slate-200/60">
                       <span className="font-bold text-slate-800 text-xs flex items-center gap-1">
                         <span className="text-slate-400 font-normal">#</span> general
@@ -185,7 +185,7 @@ export default function Features() {
 
                 {/* Events Form Mockup (Image 3) */}
                 {feat.mockupType === 'events' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex flex-col gap-2.5">
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-center gap-2.5">
                     <div>
                       <span className="text-[10px] font-semibold text-slate-600 block mb-1">Event Title *</span>
                       <div className="bg-white border border-slate-200 rounded-lg p-2 text-[11px] text-slate-400">e.g., Weekly Q&A Session</div>
@@ -218,7 +218,7 @@ export default function Features() {
 
                 {/* Automations Workflow Mockup (Image 1 & 4) */}
                 {feat.mockupType === 'automations' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex flex-col gap-2 relative overflow-hidden">
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-between gap-2 relative overflow-hidden">
                     <div className="flex justify-between items-center pb-2 border-b border-slate-200">
                       <span className="font-bold text-slate-800 text-[11px]">Welcome New Members</span>
                       <span className="bg-primary text-white text-[9px] font-bold px-2 py-0.5 rounded-full">Test & Simulate</span>
@@ -247,7 +247,7 @@ export default function Features() {
 
                 {/* Analytics Mockup */}
                 {feat.mockupType === 'analytics' && (
-                  <div className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all my-2">
+                  <div className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all my-2 flex-1 flex flex-col justify-between">
                     <div className="grid grid-cols-3 gap-2 mb-3">
                       <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
                         <span className="text-slate-500 font-medium text-[10px]">Participation</span>
@@ -282,7 +282,7 @@ export default function Features() {
 
                 {/* 0% Fee & Payout Mockup */}
                 {feat.mockupType === 'payout' && (
-                  <div className="bg-white border border-orange-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all relative overflow-hidden my-2">
+                  <div className="bg-white border border-orange-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all relative overflow-hidden my-2 flex-1 flex flex-col justify-between">
                     <div className="flex items-baseline mb-3">
                       <span className="font-poppins font-black text-3xl sm:text-4xl text-primary leading-none">0%</span>
                       <span className="text-slate-600 font-medium text-xs sm:text-sm ml-2">transaction fees</span>
