@@ -5,7 +5,7 @@ interface FeatureCard {
   title: string;
   description: string;
   pills: string[];
-  mockupType?: 'analytics' | 'payout';
+  mockupType?: 'programs' | 'events' | 'automations' | 'analytics' | 'payout';
 }
 
 const featuresList: FeatureCard[] = [
@@ -13,7 +13,8 @@ const featuresList: FeatureCard[] = [
     tag: 'Course & Community',
     title: 'Bring learning and community together',
     description: 'Choose how you want to teach: self-paced courses, group coaching, cohort-based programs, or online workshops. Focus on a community experience standard.',
-    pills: ['Courses', 'Cohorts', 'Workshops', 'Masterclass']
+    pills: ['Courses', 'Cohorts', 'Workshops', 'Masterclass'],
+    mockupType: 'programs'
   },
   {
     tag: 'Discussions & Chats',
@@ -25,13 +26,15 @@ const featuresList: FeatureCard[] = [
     tag: 'Events & Coaching',
     title: 'Run events and coaching without extra tools',
     description: 'Host workshops, office hours, coaching sessions, live events, and cohort meetings from one platform without needing to juggle separate scheduling, booking, calendar, or event software.',
-    pills: ['Workshops', 'Calendar', '1:1 Sync']
+    pills: ['Workshops', 'Calendar', '1:1 Sync'],
+    mockupType: 'events'
   },
   {
     tag: 'Automations',
     title: 'Automate the work behind the community',
     description: 'Reduce manual work with workflows for onboarding, engagement, member management, access control, and recurring tasks. Spend less time managing systems and more time supporting members.',
-    pills: ['Workflows', 'Onboarding', 'Member Actions', 'API Integrations']
+    pills: ['Workflows', 'Onboarding', 'Member Actions', 'API Integrations'],
+    mockupType: 'automations'
   },
   {
     tag: 'Analytics',
@@ -83,6 +86,112 @@ export default function Features() {
               </div>
 
               <div className="mt-6 flex flex-col items-center gap-4 w-full">
+                {/* Create a Program Mockup (Image 5) */}
+                {feat.mockupType === 'programs' && (
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2">
+                    <div className="flex justify-between items-center mb-2.5">
+                      <span className="font-bold text-slate-800 text-xs">Create a program</span>
+                      <span className="text-slate-400 text-xs">✕</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm">📖</span>
+                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Course</span>
+                        </div>
+                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Course</span>
+                        <span className="text-[9px] text-slate-500 line-clamp-2">Self-paced curriculum builder.</span>
+                      </div>
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm">📅</span>
+                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Program</span>
+                        </div>
+                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Cohort</span>
+                        <span className="text-[9px] text-slate-500 line-clamp-2">Group program with schedule.</span>
+                      </div>
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm">👤</span>
+                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
+                        </div>
+                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">1:1 Coaching</span>
+                        <span className="text-[9px] text-slate-500 line-clamp-2">Private self-book slots.</span>
+                      </div>
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm">👥</span>
+                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
+                        </div>
+                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Group Session</span>
+                        <span className="text-[9px] text-slate-500 line-clamp-2">Shared seat sessions.</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Events Form Mockup (Image 3) */}
+                {feat.mockupType === 'events' && (
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex flex-col gap-2.5">
+                    <div>
+                      <span className="text-[10px] font-semibold text-slate-600 block mb-1">Event Title *</span>
+                      <div className="bg-white border border-slate-200 rounded-lg p-2 text-[11px] text-slate-400">e.g., Weekly Q&A Session</div>
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-semibold text-slate-600 block mb-1">Cover Image</span>
+                      <div className="bg-white border border-dashed border-slate-300 rounded-lg p-2.5 text-center flex flex-col items-center gap-0.5">
+                        <span className="text-xs">🖼️</span>
+                        <span className="text-[9px] text-slate-500 font-medium">Click to upload cover image</span>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div>
+                        <span className="text-[10px] font-semibold text-slate-600 block mb-1">Date *</span>
+                        <div className="bg-white border border-slate-200 rounded-lg p-1.5 text-[10px] text-slate-500 flex justify-between items-center">
+                          <span>📅 Select date</span>
+                          <span>▾</span>
+                        </div>
+                      </div>
+                      <div>
+                        <span className="text-[10px] font-semibold text-slate-600 block mb-1">Time *</span>
+                        <div className="bg-white border border-slate-200 rounded-lg p-1.5 text-[10px] text-slate-500 flex justify-between items-center">
+                          <span>🕒 Select time</span>
+                          <span>▾</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Automations Workflow Mockup (Image 1 & 4) */}
+                {feat.mockupType === 'automations' && (
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex flex-col gap-2 relative overflow-hidden">
+                    <div className="flex justify-between items-center pb-2 border-b border-slate-200">
+                      <span className="font-bold text-slate-800 text-[11px]">Welcome New Members</span>
+                      <span className="bg-primary text-white text-[9px] font-bold px-2 py-0.5 rounded-full">Test & Simulate</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-1.5 py-1">
+                      {/* Trigger node */}
+                      <div className="bg-white border border-slate-200 rounded-xl p-2 w-full shadow-sm text-left">
+                        <span className="text-[8px] font-bold text-primary uppercase block">TRIGGER</span>
+                        <span className="font-bold text-slate-800 text-[11px]">Member Joins</span>
+                      </div>
+                      <span className="text-primary text-xs leading-none">▼</span>
+                      {/* Action 1 */}
+                      <div className="bg-white border border-slate-200 rounded-xl p-2 w-full shadow-sm text-left">
+                        <span className="text-[8px] font-bold text-emerald-600 uppercase block">ACTION</span>
+                        <span className="font-bold text-slate-800 text-[11px]">Grant Access</span>
+                      </div>
+                      <span className="text-primary text-xs leading-none">▼</span>
+                      {/* Action 2 */}
+                      <div className="bg-white border border-slate-200 rounded-xl p-2 w-full shadow-sm text-left">
+                        <span className="text-[8px] font-bold text-emerald-600 uppercase block">ACTION</span>
+                        <span className="font-bold text-slate-800 text-[11px]">Send Welcome DM</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 {/* Analytics Mockup */}
                 {feat.mockupType === 'analytics' && (
                   <div className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all my-2">

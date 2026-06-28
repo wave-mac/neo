@@ -3,6 +3,7 @@
 import WaitlistForm from '../WaitlistForm/WaitlistForm';
 
 export default function Hero() {
+  /*
   const sidebarTabs = [
     { label: 'Welcome', active: true, icon: '🏠' },
     { label: 'Courses', active: false, icon: '📚' },
@@ -11,6 +12,7 @@ export default function Hero() {
     { label: 'Members', active: false, icon: '👥' },
     { label: 'Settings', active: false, icon: '⚙️' }
   ];
+  */
 
   return (
     <section className="pt-[140px] pb-20 relative overflow-hidden text-center bg-[radial-gradient(circle_at_top_right,rgba(230,81,0,0.05),transparent_60%)]">
