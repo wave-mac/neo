@@ -89,42 +89,43 @@ export default function Features() {
               <div className="mt-6 flex flex-col items-center justify-between gap-4 w-full flex-1">
                 {/* Create a Program Mockup (Image 5) */}
                 {feat.mockupType === 'programs' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-center">
-                    <div className="flex justify-between items-center mb-2.5">
-                      <span className="font-bold text-slate-800 text-xs">Create a program</span>
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 lg:p-5 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-center">
+                    <div className="flex justify-between items-center mb-2.5 lg:mb-3.5">
+                      <span className="font-bold text-slate-800 text-xs lg:text-sm">Create a program</span>
                       <span className="text-slate-400 text-xs">✕</span>
                     </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                    <div className="grid grid-cols-2 gap-2 lg:gap-3">
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 lg:p-3 flex flex-col gap-1">
                         <div className="flex justify-between items-center">
-                          <span className="text-sm">📖</span>
-                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Course</span>
+                          <span className="text-sm lg:text-base">📖</span>
+                          <span className="text-[8px] lg:text-[9px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Course</span>
                         </div>
-                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Course</span>
-                        <span className="text-[9px] text-slate-500 line-clamp-2">Self-paced curriculum builder.</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs leading-tight mt-1">Course</span>
+                        <span className="text-[9px] lg:text-[10px] text-slate-500 line-clamp-2">Self-paced curriculum builder.</span>
                       </div>
-                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 lg:p-3 flex flex-col gap-1">
                         <div className="flex justify-between items-center">
-                          <span className="text-sm">📅</span>
-                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Program</span>
+                          <span className="text-sm lg:text-base">📅</span>
+                          <span className="text-[8px] lg:text-[9px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Program</span>
                         </div>
-                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Cohort</span>
-                        <span className="text-[9px] text-slate-500 line-clamp-2">Group program with schedule.</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs leading-tight mt-1">Cohort</span>
+                        <span className="text-[9px] lg:text-[10px] text-slate-500 line-clamp-2">Group program with schedule.</span>
                       </div>
-                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 lg:p-3 flex flex-col gap-1">
                         <div className="flex justify-between items-center">
-                          <span className="text-sm">👤</span>
-                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
+                          <span className="text-sm lg:text-base">👤</span>
+                          <span className="text-[8px] lg:text-[9px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
                         </div>
-                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">1:1 Coaching</span>
-                        <span className="text-[9px] text-slate-500 line-clamp-2">Private self-book slots.</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs leading-tight mt-1">1:1 Coaching</span>
+                        <span className="text-[9px] lg:text-[10px] text-slate-500 line-clamp-2">Private self-book slots.</span>
                       </div>
-                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 flex flex-col gap-1">
+                      <div className="bg-white border border-slate-200 rounded-xl p-2.5 lg:p-3 flex flex-col gap-1">
                         <div className="flex justify-between items-center">
-                          <span className="text-sm">👥</span>
-                          <span className="text-[8px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
+                          <span className="text-sm lg:text-base">👥</span>
+                          <span className="text-[8px] lg:text-[9px] font-bold text-slate-500 uppercase bg-slate-100 px-1 rounded">Coaching</span>
                         </div>
-                        <span className="font-bold text-slate-800 text-[11px] leading-tight mt-1">Group Session</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs leading-tight mt-1">Group Session</span>
+                        <span className="text-[9px] lg:text-[10px] text-slate-500 line-clamp-2">Shared seat sessions.</span>
                       </div>
                     </div>
                   </div>
@@ -132,21 +133,21 @@ export default function Features() {
 
                 {/* Discussions & Chats Mockup (Image 3) */}
                 {feat.mockupType === 'chats' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-between">
-                    <div className="flex justify-between items-center pb-2 border-b border-slate-200/60">
-                      <span className="font-bold text-slate-800 text-xs flex items-center gap-1">
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 lg:p-5 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-between">
+                    <div className="flex justify-between items-center pb-2 lg:pb-3 border-b border-slate-200/60">
+                      <span className="font-bold text-slate-800 text-xs lg:text-sm flex items-center gap-1">
                         <span className="text-slate-400 font-normal">#</span> general
                       </span>
-                      <span className="text-[10px] text-slate-400 font-medium">142 online</span>
+                      <span className="text-[10px] lg:text-xs text-slate-400 font-medium">142 online</span>
                     </div>
                     
-                    <div className="flex flex-col gap-2.5 py-1">
-                      <div className="flex items-start gap-2 text-[11px]">
-                        <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0 mt-0.5"></div>
+                    <div className="flex flex-col gap-2.5 lg:gap-3.5 py-1.5 lg:py-3">
+                      <div className="flex items-start gap-2.5 text-[11px] lg:text-xs">
+                        <div className="w-6 h-6 lg:w-7 lg:h-7 rounded-full bg-primary flex-shrink-0 mt-0.5"></div>
                         <div className="flex flex-col">
                           <div className="flex items-baseline gap-1.5">
                             <span className="font-bold text-slate-800">Jordan</span>
-                            <span className="text-[9px] text-slate-400">2:14 PM</span>
+                            <span className="text-[9px] lg:text-[10px] text-slate-400">2:14 PM</span>
                           </div>
                           <p className="text-slate-600 leading-tight mt-0.5">
                             Just shipped my capstone project 🎉 feedback welcome!
@@ -154,21 +155,21 @@ export default function Features() {
                         </div>
                       </div>
 
-                      <div className="flex items-start gap-2 text-[11px]">
-                        <div className="w-6 h-6 rounded-full bg-orange-400 flex-shrink-0 mt-0.5"></div>
+                      <div className="flex items-start gap-2.5 text-[11px] lg:text-xs">
+                        <div className="w-6 h-6 lg:w-7 lg:h-7 rounded-full bg-orange-400 flex-shrink-0 mt-0.5"></div>
                         <div className="flex flex-col">
                           <div className="flex items-baseline gap-1.5">
                             <span className="font-bold text-slate-800">Priya</span>
-                            <span className="text-[9px] text-slate-400">2:16 PM</span>
+                            <span className="text-[9px] lg:text-[10px] text-slate-400">2:16 PM</span>
                           </div>
                           <p className="text-slate-600 leading-tight mt-0.5">
                             Congrats!! 🔥 this is exactly what the challenge was made for
                           </p>
                           <div className="flex gap-1.5 mt-1.5">
-                            <span className="bg-orange-50 border border-orange-200 text-[10px] px-2 py-0.5 rounded-full flex items-center gap-1 font-semibold text-primary">
+                            <span className="bg-orange-50 border border-orange-200 text-[10px] lg:text-xs px-2 py-0.5 rounded-full flex items-center gap-1 font-semibold text-primary">
                               🎉 24
                             </span>
-                            <span className="bg-white border border-slate-200 text-[10px] px-2 py-0.5 rounded-full flex items-center gap-1 font-medium text-slate-600">
+                            <span className="bg-white border border-slate-200 text-[10px] lg:text-xs px-2 py-0.5 rounded-full flex items-center gap-1 font-medium text-slate-600">
                               🔥 18
                             </span>
                           </div>
@@ -176,38 +177,38 @@ export default function Features() {
                       </div>
                     </div>
 
-                    <div className="bg-white border border-slate-200 rounded-xl p-1.5 flex items-center justify-between pl-3 shadow-2xs mt-1">
-                      <span className="text-[10px] text-slate-400 truncate">Share something with the community...</span>
-                      <div className="bg-primary text-white rounded-lg px-2 py-1 text-[10px] font-bold">↑</div>
+                    <div className="bg-white border border-slate-200 rounded-xl p-1.5 lg:p-2 flex items-center justify-between pl-3 shadow-2xs mt-1">
+                      <span className="text-[10px] lg:text-xs text-slate-400 truncate">Share something with the community...</span>
+                      <div className="bg-primary text-white rounded-lg px-2.5 py-1 text-[10px] lg:text-xs font-bold">↑</div>
                     </div>
                   </div>
                 )}
 
                 {/* Events Form Mockup (Image 3) */}
                 {feat.mockupType === 'events' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-center gap-2.5">
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 lg:p-5 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-center gap-2.5 lg:gap-3.5">
                     <div>
-                      <span className="text-[10px] font-semibold text-slate-600 block mb-1">Event Title *</span>
-                      <div className="bg-white border border-slate-200 rounded-lg p-2 text-[11px] text-slate-400">e.g., Weekly Q&A Session</div>
+                      <span className="text-[10px] lg:text-xs font-semibold text-slate-600 block mb-1">Event Title *</span>
+                      <div className="bg-white border border-slate-200 rounded-lg p-2 lg:p-2.5 text-[11px] lg:text-xs text-slate-400">e.g., Weekly Q&A Session</div>
                     </div>
                     <div>
-                      <span className="text-[10px] font-semibold text-slate-600 block mb-1">Cover Image</span>
-                      <div className="bg-white border border-dashed border-slate-300 rounded-lg p-2.5 text-center flex flex-col items-center gap-0.5">
-                        <span className="text-xs">🖼️</span>
-                        <span className="text-[9px] text-slate-500 font-medium">Click to upload cover image</span>
+                      <span className="text-[10px] lg:text-xs font-semibold text-slate-600 block mb-1">Cover Image</span>
+                      <div className="bg-white border border-dashed border-slate-300 rounded-lg p-2.5 lg:p-3.5 text-center flex flex-col items-center gap-1">
+                        <span className="text-xs lg:text-sm">🖼️</span>
+                        <span className="text-[9px] lg:text-[10px] text-slate-500 font-medium">Click to upload cover image</span>
                       </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-2 gap-2 lg:gap-3">
                       <div>
-                        <span className="text-[10px] font-semibold text-slate-600 block mb-1">Date *</span>
-                        <div className="bg-white border border-slate-200 rounded-lg p-1.5 text-[10px] text-slate-500 flex justify-between items-center">
+                        <span className="text-[10px] lg:text-xs font-semibold text-slate-600 block mb-1">Date *</span>
+                        <div className="bg-white border border-slate-200 rounded-lg p-1.5 lg:p-2 text-[10px] lg:text-xs text-slate-500 flex justify-between items-center">
                           <span>📅 Select date</span>
                           <span>▾</span>
                         </div>
                       </div>
                       <div>
-                        <span className="text-[10px] font-semibold text-slate-600 block mb-1">Time *</span>
-                        <div className="bg-white border border-slate-200 rounded-lg p-1.5 text-[10px] text-slate-500 flex justify-between items-center">
+                        <span className="text-[10px] lg:text-xs font-semibold text-slate-600 block mb-1">Time *</span>
+                        <div className="bg-white border border-slate-200 rounded-lg p-1.5 lg:p-2 text-[10px] lg:text-xs text-slate-500 flex justify-between items-center">
                           <span>🕒 Select time</span>
                           <span>▾</span>
                         </div>
@@ -218,28 +219,28 @@ export default function Features() {
 
                 {/* Automations Workflow Mockup (Image 1 & 4) */}
                 {feat.mockupType === 'automations' && (
-                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-between gap-2 relative overflow-hidden">
-                    <div className="flex justify-between items-center pb-2 border-b border-slate-200">
-                      <span className="font-bold text-slate-800 text-[11px]">Welcome New Members</span>
-                      <span className="bg-primary text-white text-[9px] font-bold px-2 py-0.5 rounded-full">Test & Simulate</span>
+                  <div className="bg-[#F8FAFC] border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 lg:p-5 w-full text-left shadow-sm my-2 flex-1 flex flex-col justify-between gap-2.5 lg:gap-3 relative overflow-hidden">
+                    <div className="flex justify-between items-center pb-2 lg:pb-3 border-b border-slate-200">
+                      <span className="font-bold text-slate-800 text-[11px] lg:text-xs">Welcome New Members</span>
+                      <span className="bg-primary text-white text-[9px] lg:text-[10px] font-bold px-2 py-0.5 rounded-full">Test & Simulate</span>
                     </div>
-                    <div className="flex flex-col items-center gap-1.5 py-1">
+                    <div className="flex flex-col items-center gap-2 lg:gap-2.5 py-1 lg:py-2">
                       {/* Trigger node */}
-                      <div className="bg-white border border-slate-200 rounded-xl p-2 w-full shadow-sm text-left">
-                        <span className="text-[8px] font-bold text-primary uppercase block">TRIGGER</span>
-                        <span className="font-bold text-slate-800 text-[11px]">Member Joins</span>
+                      <div className="bg-white border border-slate-200 rounded-xl p-2 lg:p-2.5 w-full shadow-sm text-left">
+                        <span className="text-[8px] lg:text-[9px] font-bold text-primary uppercase block">TRIGGER</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs">Member Joins</span>
                       </div>
                       <span className="text-primary text-xs leading-none">▼</span>
                       {/* Action 1 */}
-                      <div className="bg-white border border-slate-200 rounded-xl p-2 w-full shadow-sm text-left">
-                        <span className="text-[8px] font-bold text-emerald-600 uppercase block">ACTION</span>
-                        <span className="font-bold text-slate-800 text-[11px]">Grant Access</span>
+                      <div className="bg-white border border-slate-200 rounded-xl p-2 lg:p-2.5 w-full shadow-sm text-left">
+                        <span className="text-[8px] lg:text-[9px] font-bold text-emerald-600 uppercase block">ACTION</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs">Grant Access</span>
                       </div>
                       <span className="text-primary text-xs leading-none">▼</span>
                       {/* Action 2 */}
-                      <div className="bg-white border border-slate-200 rounded-xl p-2 w-full shadow-sm text-left">
-                        <span className="text-[8px] font-bold text-emerald-600 uppercase block">ACTION</span>
-                        <span className="font-bold text-slate-800 text-[11px]">Send Welcome DM</span>
+                      <div className="bg-white border border-slate-200 rounded-xl p-2 lg:p-2.5 w-full shadow-sm text-left">
+                        <span className="text-[8px] lg:text-[9px] font-bold text-emerald-600 uppercase block">ACTION</span>
+                        <span className="font-bold text-slate-800 text-[11px] lg:text-xs">Send Welcome DM</span>
                       </div>
                     </div>
                   </div>
@@ -247,27 +248,27 @@ export default function Features() {
 
                 {/* Analytics Mockup */}
                 {feat.mockupType === 'analytics' && (
-                  <div className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all my-2 flex-1 flex flex-col justify-between">
-                    <div className="grid grid-cols-3 gap-2 mb-3">
-                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
-                        <span className="text-slate-500 font-medium text-[10px]">Participation</span>
-                        <div className="font-poppins font-bold text-xs sm:text-sm text-slate-800 my-0.5">74%</div>
-                        <div className="text-[9px] font-bold text-primary">▲ 9.2%</div>
+                  <div className="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 lg:p-6 w-full text-left shadow-sm hover:shadow transition-all my-2 flex-1 flex flex-col justify-between gap-3 lg:gap-4">
+                    <div className="grid grid-cols-3 gap-2 lg:gap-3 mb-1">
+                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 lg:p-3 flex flex-col justify-between">
+                        <span className="text-slate-500 font-medium text-[10px] lg:text-xs">Participation</span>
+                        <div className="font-poppins font-bold text-xs sm:text-sm lg:text-base text-slate-800 my-0.5 lg:my-1">74%</div>
+                        <div className="text-[9px] lg:text-[10px] font-bold text-primary">▲ 9.2%</div>
                       </div>
-                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
-                        <span className="text-slate-500 font-medium text-[10px]">Active</span>
-                        <div className="font-poppins font-bold text-xs sm:text-sm text-slate-800 my-0.5">2,418</div>
-                        <div className="text-[9px] font-bold text-primary">▲ 12%</div>
+                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 lg:p-3 flex flex-col justify-between">
+                        <span className="text-slate-500 font-medium text-[10px] lg:text-xs">Active</span>
+                        <div className="font-poppins font-bold text-xs sm:text-sm lg:text-base text-slate-800 my-0.5 lg:my-1">2,418</div>
+                        <div className="text-[9px] lg:text-[10px] font-bold text-primary">▲ 12%</div>
                       </div>
-                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 flex flex-col justify-between">
-                        <span className="text-slate-500 font-medium text-[10px]">Revenue</span>
-                        <div className="font-poppins font-bold text-xs sm:text-sm text-slate-800 my-0.5">$31.6k</div>
-                        <div className="text-[9px] font-bold text-primary">▲ 8.9%</div>
+                      <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2 lg:p-3 flex flex-col justify-between">
+                        <span className="text-slate-500 font-medium text-[10px] lg:text-xs">Revenue</span>
+                        <div className="font-poppins font-bold text-xs sm:text-sm lg:text-base text-slate-800 my-0.5 lg:my-1">$31.6k</div>
+                        <div className="text-[9px] lg:text-[10px] font-bold text-primary">▲ 8.9%</div>
                       </div>
                     </div>
-                    <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-2.5">
-                      <div className="text-slate-600 font-bold text-[10px] sm:text-[11px] mb-2">Engagement · last 7 days</div>
-                      <div className="flex items-end justify-between gap-1.5 h-16 pt-1">
+                    <div className="bg-[#F8FAFC] border border-slate-100 rounded-lg p-3 lg:p-4 flex-1 flex flex-col justify-between">
+                      <div className="text-slate-600 font-bold text-[10px] sm:text-[11px] lg:text-xs mb-2">Engagement · last 7 days</div>
+                      <div className="flex items-end justify-between gap-2 h-20 sm:h-24 lg:h-28 pt-2">
                         <div className="w-full bg-[#FDBA74] rounded-t-sm h-[35%]"></div>
                         <div className="w-full bg-[#FDBA74] rounded-t-sm h-[55%]"></div>
                         <div className="w-full bg-[#FDBA74] rounded-t-sm h-[42%]"></div>
@@ -282,28 +283,28 @@ export default function Features() {
 
                 {/* 0% Fee & Payout Mockup */}
                 {feat.mockupType === 'payout' && (
-                  <div className="bg-white border border-orange-200/80 rounded-2xl p-4 sm:p-5 w-full text-left shadow-sm hover:shadow transition-all relative overflow-hidden my-2 flex-1 flex flex-col justify-between">
-                    <div className="flex items-baseline mb-3">
-                      <span className="font-poppins font-black text-3xl sm:text-4xl text-primary leading-none">0%</span>
-                      <span className="text-slate-600 font-medium text-xs sm:text-sm ml-2">transaction fees</span>
+                  <div className="bg-white border border-orange-200/80 rounded-2xl p-4 sm:p-5 lg:p-6 w-full text-left shadow-sm hover:shadow transition-all relative overflow-hidden my-2 flex-1 flex flex-col justify-between gap-3 lg:gap-4">
+                    <div className="flex items-baseline mb-1 lg:mb-2 lg:mt-1">
+                      <span className="font-poppins font-black text-3xl sm:text-4xl lg:text-5xl text-primary leading-none">0%</span>
+                      <span className="text-slate-600 font-medium text-xs sm:text-sm lg:text-base ml-2">transaction fees</span>
                     </div>
 
-                    <div className="bg-[#FFF9F5] border border-orange-200/60 rounded-xl p-3 sm:p-3.5 w-full">
-                      <div className="text-slate-500 font-semibold text-[11px] mb-2">This month&apos;s payout</div>
+                    <div className="bg-[#FFF9F5] border border-orange-200/60 rounded-xl p-3.5 sm:p-4 lg:p-5 w-full flex-1 flex flex-col justify-between">
+                      <div className="text-slate-500 font-semibold text-[11px] lg:text-xs mb-2">This month&apos;s payout</div>
                       
-                      <div className="flex justify-between items-center text-xs border-b border-orange-200/50 pb-1.5 mb-1.5">
+                      <div className="flex justify-between items-center text-xs lg:text-sm border-b border-orange-200/50 pb-2 lg:pb-3 mb-2 lg:mb-3">
                         <span className="text-slate-600 font-medium">Gross sales</span>
                         <span className="font-poppins font-bold text-slate-800">$8,420</span>
                       </div>
 
-                      <div className="flex justify-between items-center text-xs border-b border-orange-200/50 pb-1.5 mb-2">
+                      <div className="flex justify-between items-center text-xs lg:text-sm border-b border-orange-200/50 pb-2 lg:pb-3 mb-2 lg:mb-3">
                         <span className="text-slate-600 font-medium">Platform fees</span>
                         <span className="font-poppins font-bold text-primary">-$0.00</span>
                       </div>
 
-                      <div className="flex justify-between items-center text-xs sm:text-sm pt-0.5">
+                      <div className="flex justify-between items-center text-xs sm:text-sm lg:text-base pt-1">
                         <span className="font-bold text-slate-900">You keep</span>
-                        <span className="font-poppins font-black text-primary text-base sm:text-lg">$8,420</span>
+                        <span className="font-poppins font-black text-primary text-base sm:text-lg lg:text-2xl">$8,420</span>
                       </div>
                     </div>
                   </div>
