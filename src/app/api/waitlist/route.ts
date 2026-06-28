@@ -24,22 +24,33 @@ export async function POST(request: Request) {
 
     // 3. Sync with Kit (ConvertKit) if configured
     const kitApiKey = process.env.CONVERTKIT_API_KEY || process.env.KIT_API_KEY;
+    const kitApiSecret = process.env.CONVERTKIT_API_SECRET || process.env.KIT_API_SECRET;
     const kitFormId = process.env.CONVERTKIT_FORM_ID || process.env.KIT_FORM_ID;
 
-    if (kitApiKey && kitFormId) {
+    if ((kitApiKey && kitFormId) || kitApiSecret) {
       try {
-        const response = await fetch(`https://api.convertkit.com/v3/forms/${kitFormId}/subscribe`, {
+        const url = kitFormId
+          ? `https://api.convertkit.com/v3/forms/${kitFormId}/subscribe`
+          : `https://api.convertkit.com/v3/subscribers`;
+
+        const payload = kitFormId
+          ? {
+              api_key: kitApiKey,
+              email: trimmedEmail,
+              fields: { source }
+            }
+          : {
+              api_secret: kitApiSecret,
+              email: trimmedEmail,
+              fields: { source }
+            };
+
+        const response = await fetch(url, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json; charset=utf-8',
           },
-          body: JSON.stringify({
-            api_key: kitApiKey,
-            email: trimmedEmail,
-            fields: {
-              source: source,
-            }
-          }),
+          body: JSON.stringify(payload),
         });
 
         if (!response.ok) {
