@@ -19,7 +19,7 @@ const featuresList: FeatureCard[] = [
   {
     tag: 'Discussions & Chats',
     title: 'Create a community people actually participate in',
-    description: 'Keep members engaged with discussion posts, chats, challenges, gamification, and member matching — letting your members connect, contribute, and learn from one another in the same spot.',
+    description: 'Keep members engaged with discussion posts, chats, challenges, gamification, and member matching. Let your members connect, contribute, and learn from one another in the same spot.',
     pills: ['Discussions', 'Direct Messages', 'Group Chats', 'Member Profiles'],
     mockupType: 'chats'
   },
@@ -81,7 +81,7 @@ export default function Features() {
                 <h3 className="font-poppins text-lg sm:text-xl font-bold text-dark leading-snug tracking-wide">
                   {feat.title}
                 </h3>
-                <p className="text-xs sm:text-sm leading-relaxed tracking-wide text-dark-light">
+                <p className="text-sm leading-relaxed tracking-wide text-dark-light">
                   {feat.description}
                 </p>
               </div>

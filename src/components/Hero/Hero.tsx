@@ -33,7 +33,7 @@ export default function Hero() {
           <WaitlistForm source="hero_cta" buttonText="Claim your founding spot" />
         </div>
         
-        <p className="text-xs sm:text-sm text-slate-500 font-poppins">
+        <p className="text-sm text-slate-500 font-poppins">
           Founding members get lifetime lowest pricing and early access when we launch.
         </p>
 

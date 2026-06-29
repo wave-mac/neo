@@ -25,7 +25,7 @@ export default function Problem() {
             Learning shouldn&apos;t feel fragmented.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed tracking-wide text-dark-light max-w-[720px] mx-auto">
-            People learn better together. But most learning businesses are built across disconnected tools — and every extra login for students is another chance to disengage.
+            People learn better together. But most learning businesses are built across disconnected tools, and every extra login for students is another chance to disengage.
           </p>
         </div>
 

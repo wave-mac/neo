@@ -21,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Vectore — Every way you teach, better with a community.",
+  title: "Vectore | Every way you teach, better with a community.",
   description: "Bring courses, cohorts, coaching, workshops, and events into one platform, with community built into the experience from day one.",
   icons: {
     icon: "/favicon.ico",
