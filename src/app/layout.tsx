@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { MuseoModerno, Figtree, Poppins } from "next/font/google";
+import { Space_Grotesk, Figtree, Poppins } from "next/font/google";
 import "./globals.css";
 
-const museoModerno = MuseoModerno({
-  variable: "--font-museo-moderno",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const figtree = Figtree({
@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${museoModerno.variable} ${figtree.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${figtree.variable} ${poppins.variable}`}>
       <body>{children}</body>
     </html>
   );

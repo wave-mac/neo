@@ -81,8 +81,8 @@ export default function WaitlistForm({
       <form 
         onSubmit={handleSubscribe} 
         className={isVertical 
-          ? "flex flex-col gap-4" 
-          : "flex flex-col sm:flex-row gap-3 sm:p-2 sm:bg-white sm:border sm:border-slate-200 sm:rounded-xl sm:shadow-md bg-transparent border-none p-0 shadow-none transition-all duration-300 sm:focus-within:border-primary sm:focus-within:ring-4 sm:focus-within:ring-primary/10 sm:focus-within:shadow-lg"
+          ? "flex flex-col gap-4 text-left" 
+          : "flex flex-col sm:flex-row items-stretch gap-3 bg-transparent border-none p-0 shadow-none transition-all duration-300"
         }
       >
         {/* Honeypot field for spam prevention */}
@@ -95,25 +95,48 @@ export default function WaitlistForm({
           tabIndex={-1}
           autoComplete="off"
         />
-        <input
-          type="email"
-          placeholder="Enter your email address..."
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={isVertical 
-            ? "border border-slate-200 rounded-md px-4 py-3.5 bg-dark-bg w-full focus:border-primary focus:bg-white outline-none text-base text-dark"
-            : "w-full sm:flex-1 px-4 py-3.5 sm:py-3 border border-slate-200 sm:border-none rounded-md sm:rounded-none bg-white sm:bg-transparent outline-none text-base text-dark placeholder-slate-400 focus:border-primary sm:focus:border-none"
-          }
-          required
-        />
+        
+        {isVertical ? (
+          <div className="flex flex-col gap-1.5 w-full">
+            <label className="text-[11px] font-bold text-slate-500 tracking-wide uppercase">Email address</label>
+            <input
+              type="email"
+              placeholder="you@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="border border-slate-200 rounded-lg px-4 py-3 bg-[#F8FAFC] w-full focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/10 outline-none text-sm text-dark transition-all"
+              required
+            />
+          </div>
+        ) : (
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full sm:flex-1 px-4 py-3 border border-slate-200 rounded-lg bg-white outline-none text-sm text-dark placeholder-slate-400 focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+            required
+          />
+        )}
+        
         <button 
           type="submit" 
           disabled={isSubmitting} 
-          className={`bg-primary hover:bg-primary-hover text-white font-poppins text-[15px] font-semibold px-6 py-3.5 sm:py-3 rounded-md transition-all duration-300 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed w-full sm:w-auto`}
+          className={isVertical 
+            ? "bg-primary hover:bg-primary-hover text-white font-poppins text-sm font-semibold px-6 py-3.5 rounded-lg transition-all duration-300 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed w-full shadow-[0_4px_14px_rgba(230,81,0,0.3)] flex items-center justify-center gap-2 hover:-translate-y-[1px]"
+            : "bg-primary hover:bg-primary-hover text-white font-poppins text-sm font-semibold px-6 py-3 sm:py-3 rounded-lg transition-all duration-300 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed w-full sm:w-auto shadow-[0_4px_14px_rgba(230,81,0,0.2)] flex items-center justify-center gap-2 hover:-translate-y-[1px]"
+          }
         >
-          {isSubmitting ? 'Securing spot...' : buttonText}
+          {isSubmitting ? 'Securing spot...' : `${buttonText} →`}
         </button>
       </form>
+      
+      {isVertical && (
+        <span className="text-[10px] text-slate-400 font-medium tracking-wide text-center mt-3.5 block">
+          Lifetime lowest pricing · Early access · Priority support
+        </span>
+      )}
+      
       {errorMessage && <p className="text-sm text-red-500 mt-2 font-medium text-center animate-fade-in">{errorMessage}</p>}
     </div>
   );

@@ -16,11 +16,12 @@ module.exports = {
         dark: {
           DEFAULT: '#1E293B',
           light: '#334155',
-          bg: '#FAFAF9',
+          bg: '#FBF9F6',
         },
       },
       fontFamily: {
-        museo: ['var(--font-museo-moderno)', 'sans-serif'],
+        museo: ['var(--font-space-grotesk)', 'sans-serif'],
+        space: ['var(--font-space-grotesk)', 'sans-serif'],
         figtree: ['var(--font-figtree)', 'sans-serif'],
         poppins: ['var(--font-poppins)', 'sans-serif'],
       },

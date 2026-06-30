@@ -4,37 +4,69 @@ import WaitlistForm from '../WaitlistForm/WaitlistForm';
 
 export default function BottomSignup() {
   return (
-    <section id="bottom-signup" className="py-[100px] bg-white border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="bg-dark rounded-2xl p-6 sm:p-10 md:p-16 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-16 items-center relative overflow-hidden before:content-[''] before:absolute before:top-0 before:right-0 before:w-[300px] before:h-[300px] before:bg-[radial-gradient(circle,rgba(230,81,0,0.15)_0%,transparent_70%)] before:z-10">
-          <div className="text-white z-20 relative">
-            <h2 className="font-museo text-white text-3xl sm:text-4xl md:text-[38px] leading-snug tracking-wide font-extrabold mb-4">
+    <section id="bottom-signup" className="py-20 sm:py-28 bg-transparent">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="bg-white border border-slate-200 rounded-[24px] sm:rounded-[32px] shadow-premium overflow-hidden grid grid-cols-1 md:grid-cols-[1.1fr_1fr]">
+          {/* Left Column (White Background) */}
+          <div className="p-8 sm:p-10 md:p-12 lg:p-14 flex flex-col justify-center">
+            <h2 className="font-museo text-dark text-3xl sm:text-[34px] leading-tight font-black mb-4">
               Become a founding member
             </h2>
-            <p className="text-base leading-relaxed tracking-wide text-slate-400 mb-8">
-              We&apos;re making this with creators, coaches, and educators who are tired of stitching their teaching across five tools and watching students fall through the gaps.
+            <p className="text-sm sm:text-[15px] leading-relaxed text-slate-600 mb-8 font-normal">
+              We&apos;re building this with creators, coaches, and educators who are tired of stitching their teaching across five tools and watching students fall through the gaps.
             </p>
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3 font-poppins text-sm sm:text-base font-medium">
-                <span className="text-primary text-lg">✓</span>
-                <span className="text-sm sm:text-base text-slate-300 font-medium tracking-wide">Lifetime lowest pricing (never pay more)</span>
+              <div className="flex items-center gap-3.5">
+                <span className="w-5 h-5 rounded-full bg-[#FFF3E0] flex items-center justify-center shrink-0">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.2L3.5 6.7L9 1.2" stroke="#E65100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="text-xs sm:text-sm text-slate-600 font-semibold tracking-wide">
+                  Founding-member pricing, locked in for life
+                </span>
               </div>
-              <div className="flex items-center gap-3 font-poppins text-sm sm:text-base font-medium">
-                <span className="text-primary text-lg">✓</span>
-                <span className="text-sm sm:text-base text-slate-300 font-medium tracking-wide">Early access to beta versions</span>
+              <div className="flex items-center gap-3.5">
+                <span className="w-5 h-5 rounded-full bg-[#FFF3E0] flex items-center justify-center shrink-0">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.2L3.5 6.7L9 1.2" stroke="#E65100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="text-xs sm:text-sm text-slate-600 font-semibold tracking-wide">
+                  Early access before we launch
+                </span>
               </div>
-              <div className="flex items-center gap-3 font-poppins text-sm sm:text-base font-medium">
-                <span className="text-primary text-lg">✓</span>
-                <span className="text-sm sm:text-base text-slate-300 font-medium tracking-wide">Direct input into product roadmap</span>
+              <div className="flex items-center gap-3.5">
+                <span className="w-5 h-5 rounded-full bg-[#FFF3E0] flex items-center justify-center shrink-0">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.2L3.5 6.7L9 1.2" stroke="#E65100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="text-xs sm:text-sm text-slate-600 font-semibold tracking-wide">
+                  A real say in what we build next
+                </span>
               </div>
-              <div className="flex items-center gap-3 font-poppins text-sm sm:text-base font-medium">
-                <span className="text-primary text-lg">✓</span>
-                <span className="text-sm sm:text-base text-slate-300 font-medium tracking-wide">Priority support</span>
+              <div className="flex items-center gap-3.5">
+                <span className="w-5 h-5 rounded-full bg-[#FFF3E0] flex items-center justify-center shrink-0">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.2L3.5 6.7L9 1.2" stroke="#E65100" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="text-xs sm:text-sm text-slate-600 font-semibold tracking-wide">
+                  Priority support
+                </span>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg z-20 relative">
+          {/* Right Column (Cream Background) */}
+          <div className="p-8 sm:p-10 md:p-12 lg:p-14 bg-[#FFFDFB] border-t md:border-t-0 md:border-l border-slate-200 flex flex-col justify-center">
+            <h3 className="font-poppins text-dark text-xl sm:text-[22px] font-bold mb-1 tracking-wide">
+              Claim your founding spot
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-500 mb-6 font-medium">
+              Join the waitlist. We won&apos;t spam you.
+            </p>
             <WaitlistForm 
               source="bottom_cta" 
               buttonText="Claim Your Founding Spot" 
