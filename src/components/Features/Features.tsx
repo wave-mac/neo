@@ -149,7 +149,7 @@ export default function Features() {
                           alt={mockup.alt} 
                           width={420} 
                           height={315} 
-                          className="w-full h-[180px] sm:h-[280px] rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.03)] border border-slate-200/40 object-cover object-top bg-white"
+                          className="w-full h-[180px] sm:h-[280px] rounded-lg border border-slate-200/40 object-cover object-top bg-white"
                         />
                       </div>
                     </div>
