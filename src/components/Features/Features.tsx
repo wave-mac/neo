@@ -125,17 +125,17 @@ export default function Features() {
                 {/* Mockup Image Column */}
                 <div className={`py-6 sm:py-8 md:py-10 px-2 sm:px-4 md:px-6 flex items-center justify-center w-full h-full ${isEven ? 'bg-white order-2 md:order-1' : 'bg-slate-50/50 order-2 md:order-2'}`}>
                   {feat.mockupType === 'analytics' || feat.mockupType === 'payout' ? (
-                    <div className="w-full sm:max-w-[420px] rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300 p-1.5 sm:p-2.5 flex items-center justify-center">
+                    <div className="w-full sm:max-w-[420px] rounded-2xl border border-slate-200 bg-white overflow-hidden p-1.5 sm:p-2.5 flex items-center justify-center">
                       <Image 
                         src={mockup.src} 
                         alt={mockup.alt} 
                         width={420} 
                         height={315} 
-                        className="w-full h-[180px] sm:h-[280px] rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.03)] border border-slate-200/40 object-cover object-top bg-white"
+                        className="w-full h-[180px] sm:h-[280px] rounded-lg border border-slate-200/40 object-cover object-top bg-white"
                       />
                     </div>
                   ) : (
-                    <div className="w-full sm:max-w-[420px] rounded-xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300">
+                    <div className="w-full sm:max-w-[420px] rounded-xl border border-slate-200 bg-white overflow-hidden">
                       {/* Browser Title Bar */}
                       <div className="h-8 bg-slate-50 border-b border-slate-150 flex items-center px-3.5 gap-1.5 select-none">
                         <div className="w-2 h-2 rounded-full bg-[#FF5F56]"></div>
