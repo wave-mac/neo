@@ -80,11 +80,11 @@ export default function Features() {
       {/* Centered Header Banner */}
       <div className="bg-transparent text-center py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-museo text-dark text-3xl sm:text-4xl md:text-[42px] leading-snug tracking-wide font-black mb-5">
+          <h2 className="font-museo text-dark text-[34px] sm:text-4xl md:text-[42px] leading-snug tracking-wide font-black mb-5">
             The complete online <br className="hidden sm:inline" />
             community platform <span className="text-primary italic">built for learning.</span>
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed tracking-wide text-slate-500 max-w-[680px] mx-auto font-medium">
+          <p className="text-[17px] sm:text-lg leading-relaxed tracking-wide text-slate-500 max-w-[680px] mx-auto font-medium">
             Vectore empowers you with all the tools you need to build a thriving community around your education business.
           </p>
         </div>
@@ -107,10 +107,10 @@ export default function Features() {
                   <span className="bg-primary-light text-primary border border-primary/10 px-3 py-1 rounded-full text-xs font-bold w-fit mb-5 mx-auto sm:mx-0">
                     {feat.tag}
                   </span>
-                  <h3 className="font-museo text-dark text-2xl sm:text-3xl md:text-[30px] leading-tight font-black mb-4 text-center sm:text-left">
+                  <h3 className="font-museo text-dark text-[26px] sm:text-3xl md:text-[30px] leading-tight font-black mb-4 text-center sm:text-left">
                     {feat.title}
                   </h3>
-                  <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-6 font-normal text-center sm:text-left">
+                  <p className="text-slate-500 text-[15px] sm:text-base leading-relaxed mb-6 font-normal text-center sm:text-left">
                     {feat.description}
                   </p>
                   <div className="flex flex-wrap justify-center sm:justify-start gap-2">
