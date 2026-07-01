@@ -107,7 +107,7 @@ export default function Features() {
                   <span className="bg-primary-light text-primary border border-primary/10 px-3 py-1 rounded-full text-xs font-bold w-fit mb-5">
                     {feat.tag}
                   </span>
-                  <h3 className="font-museo text-dark text-[26px] sm:text-3xl md:text-[30px] leading-tight font-black mb-4">
+                  <h3 className="font-museo text-dark text-[26px] sm:text-3xl md:text-[30px] leading-[1.2] font-black mb-4">
                     {feat.title}
                   </h3>
                   <p className="text-slate-500 text-[15px] sm:text-base leading-relaxed mb-6 font-normal">

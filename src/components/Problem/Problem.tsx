@@ -7,7 +7,7 @@ export default function Problem() {
         {/* Section Header */}
         <div className="mb-12">
           <span className="block text-[#E65100] font-poppins text-xs font-bold tracking-widest uppercase mb-4">THE PROBLEM</span>
-          <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-tight font-extrabold text-dark mb-5 tracking-tight">
+          <h2 className="font-museo text-3xl sm:text-4xl md:text-[40px] leading-[1.15] font-extrabold text-dark mb-5 tracking-tight">
             Learning shouldn&apos;t feel fragmented.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed tracking-wide text-dark-light max-w-[700px] mx-auto">
