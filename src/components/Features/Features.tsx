@@ -80,7 +80,7 @@ export default function Features() {
       {/* Centered Header Banner */}
       <div className="bg-transparent text-center py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-museo text-dark text-[34px] sm:text-4xl md:text-[42px] leading-[1.15] tracking-wide font-black mb-5">
+          <h2 className="font-museo text-dark text-[34px] sm:text-4xl md:text-[42px] leading-[1.15] md:leading-[1.22] tracking-wide font-black mb-5 md:mb-7">
             The complete online <br className="hidden sm:inline" />
             community platform <span className="text-primary italic">built for learning.</span>
           </h2>

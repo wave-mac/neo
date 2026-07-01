@@ -22,7 +22,7 @@ export default function Hero() {
           <span className="w-1.5 h-1.5 rounded-full bg-[#E65100]"></span>
           Founding spots now open • Private beta
         </div>
-        <h1 className="font-museo text-4xl sm:text-5xl md:text-[60px] leading-[1.15] font-extrabold text-dark max-w-[850px] mx-auto mb-6 tracking-tight">
+        <h1 className="font-museo text-4xl sm:text-5xl md:text-[60px] leading-[1.15] md:leading-[1.22] font-extrabold text-dark max-w-[850px] mx-auto mb-6 md:mb-8 tracking-tight">
           Every way you teach, <br />
           <span className="text-[#E65100]">better with a <br /> community.</span>
         </h1>
