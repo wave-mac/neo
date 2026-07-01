@@ -103,7 +103,7 @@ export default function Features() {
                 className="grid grid-cols-1 md:grid-cols-2 items-stretch divide-y md:divide-y-0 md:divide-x divide-slate-200 border-b border-slate-200 last:border-b-0"
               >
                 {/* Text Column */}
-                <div className={`py-10 sm:py-12 md:py-14 px-6 sm:px-10 md:px-14 bg-white flex flex-col justify-center h-full ${isEven ? 'order-1 md:order-2' : 'order-1 md:order-1'}`}>
+                <div className={`py-6 sm:py-8 md:py-10 px-6 sm:px-10 md:px-14 bg-white flex flex-col justify-center h-full ${isEven ? 'order-1 md:order-2' : 'order-1 md:order-1'}`}>
                   <span className="bg-primary-light text-primary border border-primary/10 px-3 py-1 rounded-full text-xs font-bold w-fit mb-5">
                     {feat.tag}
                   </span>
@@ -123,9 +123,9 @@ export default function Features() {
                 </div>
 
                 {/* Mockup Image Column */}
-                <div className={`py-10 sm:py-12 md:py-14 px-6 sm:px-10 md:px-12 bg-slate-50/50 flex items-center justify-center w-full h-full ${isEven ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
+                <div className={`py-6 sm:py-8 md:py-10 px-6 sm:px-10 md:px-12 bg-slate-50/50 flex items-center justify-center w-full h-full ${isEven ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
                   {feat.mockupType === 'analytics' || feat.mockupType === 'payout' ? (
-                    <div className="w-full max-w-[420px] rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300 p-1.5 sm:p-2.5 flex items-center justify-center">
+                    <div className="w-full max-w-[280px] sm:max-w-[420px] rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300 p-1.5 sm:p-2.5 flex items-center justify-center">
                       <Image 
                         src={mockup.src} 
                         alt={mockup.alt} 
@@ -135,7 +135,7 @@ export default function Features() {
                       />
                     </div>
                   ) : (
-                    <div className="w-full max-w-[420px] rounded-xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300">
+                    <div className="w-full max-w-[280px] sm:max-w-[420px] rounded-xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300">
                       {/* Browser Title Bar */}
                       <div className="h-8 bg-slate-50 border-b border-slate-150 flex items-center px-3.5 gap-1.5 select-none">
                         <div className="w-2 h-2 rounded-full bg-[#FF5F56]"></div>
