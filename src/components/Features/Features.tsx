@@ -123,7 +123,7 @@ export default function Features() {
                 </div>
 
                 {/* Mockup Image Column */}
-                <div className={`py-6 sm:py-8 md:py-10 px-5 sm:px-8 md:px-10 bg-slate-50/50 flex items-center justify-center w-full h-full ${isEven ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
+                <div className={`py-6 sm:py-8 md:py-10 px-2 sm:px-4 md:px-6 bg-slate-50/50 flex items-center justify-center w-full h-full ${isEven ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
                   {feat.mockupType === 'analytics' || feat.mockupType === 'payout' ? (
                     <div className="w-full max-w-[420px] rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300 p-1.5 sm:p-2.5 flex items-center justify-center">
                       <Image 
@@ -131,7 +131,7 @@ export default function Features() {
                         alt={mockup.alt} 
                         width={420} 
                         height={315} 
-                        className="w-full h-[180px] sm:h-auto rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.03)] border border-slate-200/40 object-cover object-top bg-white"
+                        className="w-full h-[180px] sm:h-[280px] rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.03)] border border-slate-200/40 object-cover object-top bg-white"
                       />
                     </div>
                   ) : (
@@ -149,7 +149,7 @@ export default function Features() {
                           alt={mockup.alt} 
                           width={420} 
                           height={315} 
-                          className="w-full h-[180px] sm:h-auto rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.03)] border border-slate-200/40 object-cover object-top bg-white"
+                          className="w-full h-[180px] sm:h-[280px] rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.03)] border border-slate-200/40 object-cover object-top bg-white"
                         />
                       </div>
                     </div>

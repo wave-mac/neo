@@ -40,7 +40,7 @@ export default function Hero() {
         </p>
 
         {/* Dashboard Mockup Component using Real Image */}
-        <div className="mt-16 mx-auto max-w-[960px] rounded-2xl border border-slate-200 shadow-premium bg-white overflow-hidden relative animate-float">
+        <div className="mt-16 mx-auto max-w-[780px] rounded-2xl border border-slate-200 shadow-premium bg-white overflow-hidden relative animate-float">
           <div className="h-10 bg-slate-100 border-b border-slate-200 flex items-center px-4 gap-1.5 justify-between select-none">
             <div className="flex gap-1.5">
               <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
