@@ -100,7 +100,7 @@ export default function Features() {
             return (
               <div 
                 key={idx} 
-                className="grid grid-cols-1 md:grid-cols-2 items-stretch divide-y md:divide-y-0 md:divide-x divide-slate-200 border-b border-slate-200 last:border-b-0"
+                className={`grid grid-cols-1 md:grid-cols-2 items-stretch divide-y md:divide-y-0 divide-slate-200 border-b border-slate-200 last:border-b-0 ${isEven ? '' : 'md:divide-x'}`}
               >
                 {/* Text Column */}
                 <div className={`py-6 sm:py-8 md:py-10 px-5 sm:px-8 md:px-10 bg-white flex flex-col justify-center h-full ${isEven ? 'order-1 md:order-2' : 'order-1 md:order-1'}`}>
@@ -123,7 +123,7 @@ export default function Features() {
                 </div>
 
                 {/* Mockup Image Column */}
-                <div className={`py-6 sm:py-8 md:py-10 px-2 sm:px-4 md:px-6 bg-slate-50/50 flex items-center justify-center w-full h-full ${isEven ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
+                <div className={`py-6 sm:py-8 md:py-10 px-2 sm:px-4 md:px-6 flex items-center justify-center w-full h-full ${isEven ? 'bg-white order-2 md:order-1' : 'bg-slate-50/50 order-2 md:order-2'}`}>
                   {feat.mockupType === 'analytics' || feat.mockupType === 'payout' ? (
                     <div className="w-full sm:max-w-[420px] rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300 p-1.5 sm:p-2.5 flex items-center justify-center">
                       <Image 
